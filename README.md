@@ -15,6 +15,12 @@ the popup.
 I don't have resources to fix this, but if anyone is interested in
 fixing it, please file a pull request!
 
+## FAQ
+
+* *Is graphic design your passion*: absolutely!
+
+* *I found a bug!*: thanks for finding it! Please file a report on the [issues](issues) page.
+
 ## Building this for yourself
 
 ### Prerequisites

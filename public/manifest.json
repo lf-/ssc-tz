@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
 
-  "name": "SSC timezone localizer",
-  "description": "Patches the UBC course schedule pages to show courses in the local timezone",
+  "name": "UBC Course Timezone Localizer",
+  "description": "Changes the UBC course schedule pages to show courses in the local timezone",
   "version": "1.0",
 
   "content_scripts": [
@@ -12,6 +12,5 @@
       }
   ],
   "permissions": [
-    "activeTab"
   ]
 }
