@@ -1,30 +1,25 @@
-# Chrome Extension TypeScript Starter
+# UBC course selection page timezone fix
 
-[![Build Status](https://travis-ci.org/chibat/chrome-extension-typescript-starter.svg?branch=master)](https://travis-ci.org/chibat/chrome-extension-typescript-starter)
+This Chrome extension (well, you could probably use it as a user script as well)
+localizes the times on UBC's course selection pages to your local time zone.
 
-Chrome Extension, TypeScript and Visual Studio Code
+It will highlight days in red if they are different in your timezone than they
+are in Vancouver, *after* updating them to be in your local timezone. This is
+because of the below:
 
-## Prerequisites
+**Important Note/Bug**: we are not clever enough to change the schedule popup
+beyond changing the times to local *without* moving around the
+entries, so if a date is in red, it is not going to line up with the date on
+the popup.
+
+I don't have resources to fix this, but if anyone is interested in
+fixing it, please file a pull request!
+
+## Building this for yourself
+
+### Prerequisites
 
 * [node + npm](https://nodejs.org/) (Current Version)
-
-## Option
-
-* [Visual Studio Code](https://code.visualstudio.com/)
-
-## Includes the following
-
-* TypeScript
-* Webpack
-* Moment.js
-* jQuery
-* Jest
-* Example Code
-    * Chrome Storage
-    * Options Version 2
-    * content script
-    * count up badge number
-    * background
 
 ## Project Structure
 
@@ -38,10 +33,6 @@ Chrome Extension, TypeScript and Visual Studio Code
 ```
 npm install
 ```
-
-## Import as Visual Studio Code project
-
-...
 
 ## Build
 
@@ -66,6 +57,3 @@ type `Ctrl + Shift + B`
 ## Load extension to chrome
 
 Load `dist` directory
-
-## Test
-`npx jest` or `npm run test`

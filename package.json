@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-typescript-starter",
+  "name": "ubc-ssc-timezone-fix",
   "version": "1.0.0",
-  "description": "chrome-extension-typescript-starter",
+  "description": "chrome extension that localizes the timezones on the UBC courses site",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --config webpack/webpack.dev.js --watch",
@@ -13,19 +13,18 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+    "url": "https://github.com/lf-/ssc-tz"
   },
   "dependencies": {
+    "@types/luxon": "^1.25.0",
     "jquery": "^3.5.0",
-    "moment": "~2.24.0"
+    "luxon": "^1.25.0"
   },
   "devDependencies": {
     "@types/chrome": "0.0.100",
     "@types/jest": "^25.1.4",
     "@types/jquery": "^3.3.33",
     "copy-webpack-plugin": "^6.1.0",
-    "jest": "^25.1.0",
-    "ts-jest": "^25.2.1 ",
     "rimraf": "^3.0.2 ",
     "ts-loader": "^6.2.1",
     "typescript": "~3.8.3 ",

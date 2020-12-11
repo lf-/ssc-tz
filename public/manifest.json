@@ -1,33 +1,17 @@
 {
   "manifest_version": 2,
 
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
+  "name": "SSC timezone localizer",
+  "description": "Patches the UBC course schedule pages to show courses in the local timezone",
   "version": "1.0",
-
-  "options_ui": {
-    "page": "options.html",
-    "chrome_style": true
-  },
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
 
   "content_scripts": [
       {
-          "matches": ["<all_urls>"],
+          "matches": ["*://courses.students.ubc.ca/cs/*"],
           "js": ["js/vendor.js", "js/content_script.js"]
       }
   ],
-
-  "background": {
-    "scripts": ["js/vendor.js", "js/background.js"]
-  },
-
   "permissions": [
-    "storage",
-    "<all_urls>"
+    "activeTab"
   ]
 }
